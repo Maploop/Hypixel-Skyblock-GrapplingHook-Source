@@ -1,6 +1,6 @@
 name: HypixelSBGrapplingHook
 main: me.deemu.grapplinghook.main
-version: 1.0
+version: 1.4
 api-version: 1.16
 description: GrapplingHook Plugin.
 
@@ -8,6 +8,8 @@ commands:
   grapplinghook:
     aliases:
       - gh
+  ghconsolegive:
+    description: The command to give players the gh from console
 
 permissions:
   grapplinghook.admin:
