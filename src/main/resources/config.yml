@@ -1,0 +1,24 @@
+# Welcome to Hypixel Skyblock Grappling Hook Config File.
+# Here you can change some essentials things.
+# Config Version: 1.3
+# If you have installed a new version of the plugin, please reset the config.
+
+# Should there be a cooldown? (Default: true)
+cooldown-enabled: true
+# How much should the cooldown be in seconds? (Default: 2)
+cooldown-amount: 2
+
+messages:
+  on-cooldown: '&cWhow! Slow down there!'
+  no-permission: '&cYou must be admin or higher to use this command.'
+
+grapplinghook:
+  displayname: '&aGrappling Hook'
+  error-sound-enabled: true
+  # Shoud the grappling hook have an enchantment effect? (Default: false)
+  shiny: false
+  # Should the grappling hook item be unbreakable? (Default: true)
+  unbreakable: true
+  # Should the lore be enabled? (Default: true)
+  lore-enabled: true
+  # LORE EDITING WILL BE HERE IN FUTURE VERSIONS.

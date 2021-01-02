@@ -1,0 +1,14 @@
+name: HypixelSBGrapplingHook
+main: me.deemu.grapplinghook.main
+version: 1.0
+api-version: 1.16
+description: GrapplingHook Plugin.
+
+commands:
+  grapplinghook:
+    aliases:
+      - gh
+
+permissions:
+  grapplinghook.admin:
+    description: The admin perms!

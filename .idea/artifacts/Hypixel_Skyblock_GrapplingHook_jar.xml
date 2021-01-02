@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="Hypixel Skyblock GrapplingHook:jar">
+    <output-path>$PROJECT_DIR$/../Plugin/.server/plugins</output-path>
+    <root id="archive" name="Hypixel Skyblock GrapplingHook.jar">
+      <element id="module-output" name="Hypixel Skyblock GrapplingHook" />
+    </root>
+  </artifact>
+</component>
