@@ -21,4 +21,8 @@ grapplinghook:
   unbreakable: true
   # Should the lore be enabled? (Default: true)
   lore-enabled: true
-  # LORE EDITING WILL BE HERE IN FUTURE VERSIONS.
+  lore:
+    - '&7Travel in style using'
+    - '&7this Grappling Hook.'
+    - ''
+    - '&a&lUNCOMMON'

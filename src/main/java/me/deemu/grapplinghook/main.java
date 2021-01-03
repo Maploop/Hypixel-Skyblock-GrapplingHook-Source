@@ -1,9 +1,5 @@
 package me.deemu.grapplinghook;
 
-import net.md_5.bungee.api.chat.ClickEvent;
-import net.md_5.bungee.api.chat.ComponentBuilder;
-import net.md_5.bungee.api.chat.HoverEvent;
-import net.md_5.bungee.api.chat.TextComponent;
 import org.bukkit.*;
 import org.bukkit.command.Command;
 import org.bukkit.command.CommandSender;
@@ -17,7 +13,6 @@ import org.bukkit.inventory.ItemFlag;
 import org.bukkit.inventory.ItemStack;
 import org.bukkit.inventory.meta.ItemMeta;
 import org.bukkit.plugin.java.JavaPlugin;
-import org.bukkit.scheduler.BukkitRunnable;
 import org.bukkit.util.Vector;
 
 import me.deemu.grapplinghook.Commands.mainCommand;
@@ -102,10 +97,9 @@ public class main extends JavaPlugin implements Listener {
                         grappling_hook_meta.setDisplayName(utils.chat(getConfig().getString("grapplinghook.displayname")));
                         List<String> grappling_hook_lore = new ArrayList<String>();
                         if (getConfig().getBoolean("grapplinghook.lore-enabled") == true) {
-                            grappling_hook_lore.add(ChatColor.GRAY + "Travel in style using");
-                            grappling_hook_lore.add(ChatColor.GRAY + "this Grappling Hook.");
-                            grappling_hook_lore.add("");
-                            grappling_hook_lore.add(ChatColor.GREEN + "" + ChatColor.BOLD + "UNCOMMON");
+                            for(String agrappling_hook_lore : getConfig().getStringList("grapplinghook.lore")){
+                                grappling_hook_lore.add(utils.chat(agrappling_hook_lore));
+                            }
                         }
                         if (getConfig().getBoolean("grapplinghook.shiny") == true) {
                             grappling_hook_meta.addEnchant(Enchantment.LUCK, 1, false);
