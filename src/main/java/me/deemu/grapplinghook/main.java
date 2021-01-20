@@ -24,13 +24,14 @@ import java.util.List;
 public class main extends JavaPlugin implements Listener {
     private HashMap<String, Long> cooldown = new HashMap<String, Long>();
     private int cooldowntime = getConfig().getInt("cooldown-amount");
-
     @Override
     public void onEnable() {
         saveDefaultConfig();
         Bukkit.getPluginManager().registerEvents(this, this);
         getCommand("grapplinghook").setExecutor(new mainCommand(this));
         getCommand("gh").setExecutor(new mainCommand(this));
+        getCommand("gh").setTabCompleter(new utils());
+        getCommand("grapplinghook").setTabCompleter(new utils());
         ConsoleCommandSender console = Bukkit.getConsoleSender();
         console.sendMessage(utils.chat("&eGrappling Hook&a Plugin loaded successfully! &eVersion 1.2"));
     }
@@ -67,7 +68,6 @@ public class main extends JavaPlugin implements Listener {
 
                     Vector v = new Vector(loc2.getX() - loc1.getX(), 1, loc2.getZ() - loc1.getZ());
                     p.setVelocity(v);
-
 
                 } else if (getConfig().getBoolean("cooldown-enabled") == false) {
                     Location loc1 = p.getLocation();

@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="LevelPoints">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/../Plugin/.server/plugins/LevelPoints.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>
