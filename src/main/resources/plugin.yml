@@ -1,6 +1,6 @@
-name: HSBGH
-main: me.deemu.grapplinghook.main
-version: 1.0
+name: GrapplingHook
+main: net.maploop.GrapplingHook
+version: 1.7
 api-version: 1.16
 
 commands:

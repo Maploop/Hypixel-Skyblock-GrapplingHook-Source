@@ -1,12 +1,16 @@
 # Welcome to Hypixel Skyblock Grappling Hook Config File.
 # Here you can change some essentials things.
-# Config Version: 1.3
+# Config Version: 1.7
 # If you have installed a new version of the plugin, please reset the config.
 
 # Should there be a cooldown? (Default: true)
 cooldown-enabled: true
 # How much should the cooldown be in seconds? (Default: 2)
 cooldown-amount: 2
+
+# If you don't know what you're doing, don't touch this.
+cancel-damage: true # defaylt: true
+cancellation-timeout: 5 # default: 5 (SECONDS)
 
 messages:
   on-cooldown: '&cWhow! Slow down there!'

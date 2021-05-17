@@ -1,4 +1,4 @@
-package me.deemu.grapplinghook;
+package net.maploop;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -8,7 +8,7 @@ import org.bukkit.command.Command;
 import org.bukkit.command.CommandSender;
 import org.bukkit.command.TabCompleter;
 
-public class utils implements TabCompleter {
+public class Util implements TabCompleter {
     public static String chat(String s){
         return ChatColor.translateAlternateColorCodes('&', s);
     }
