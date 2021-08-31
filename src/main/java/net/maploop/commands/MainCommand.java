@@ -36,7 +36,7 @@ public class MainCommand implements CommandExecutor {
         discord.setBold(true);
         discord.setHoverEvent(new HoverEvent(HoverEvent.Action.SHOW_TEXT, new ComponentBuilder("Click to join Maploop's discord!").
                 color(net.md_5.bungee.api.ChatColor.BLUE).create()));
-        discord.setClickEvent(new ClickEvent(ClickEvent.Action.OPEN_URL, "https://discord.gg/xSutrwe"));
+        discord.setClickEvent(new ClickEvent(ClickEvent.Action.OPEN_URL, "https://discord.gg/NgfTjW8Tyr"));
         if (s.equalsIgnoreCase("grapplinghook") || s.equalsIgnoreCase("gh")) {
             if (p.hasPermission("grapplinghook.admin")) {
                 if (args.length == 0) {
