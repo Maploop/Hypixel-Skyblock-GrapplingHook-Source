@@ -9,10 +9,10 @@ import org.bukkit.event.entity.EntityDamageEvent;
 public class EntityDamage implements Listener {
     @EventHandler
     public void onDamage(EntityDamageEvent event) {
-        if(event.getEntity() instanceof Player) {
+        if (event.getEntity() instanceof Player) {
             Player player = (Player) event.getEntity();
-            if(GrapplingHook.FLYING_TIMEOUT.containsKey(player.getUniqueId())) {
-                if(GrapplingHook.FLYING_TIMEOUT.get(player.getUniqueId()) < System.currentTimeMillis()) return;
+            if (GrapplingHook.FLYING_TIMEOUT.containsKey(player.getUniqueId())) {
+                if (GrapplingHook.FLYING_TIMEOUT.get(player.getUniqueId()) < System.currentTimeMillis()) return;
                 event.setCancelled(true);
             }
         }
