@@ -5,7 +5,6 @@ https://www.spigotmc.org/resources/grappling-hook-plugin-1-16-plugin.87186/
 
 ### Suppot discord updated: https://discord.gg/NgfTjW8Tyr
 
-This plugin is discontinued, please check out the continued version here:
-https://github.com/lucian929/Hypixel-Skyblock-GrapplingHook-Source
+DISCLAIMER: I no longer update this plugin, if you want an updated version please use this source code to make your own.
 
 
